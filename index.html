@@ -9,10 +9,17 @@
 			body {
 				font-family: Helvetica, sans-serif;
 			}
-			.pic {
-				opacity: 0.85;
+			.static {
 				position: absolute;
 				right: 0px;
+				background: white;
+			}
+			.static:hover {
+				opacity: 0;
+			}
+			.active {
+				right: 0px;
+				position: absolute;
 			}
 			.about {
 				font-size: 350%;
@@ -46,8 +53,11 @@
 	</head>
 	<body>
 		<h1 title="тыры-пыры">Привет</h1>
-		<div class="pic">
-			<img src="cat.jpg" alt="cat" title="кiт">
+		<div class="active">
+			<img src="cat.gif">
+		</div>
+		<div class="static">
+			<img src="catto.gif">
 		</div>
 		<div class="about">
 			<p><b>я Ника, мне 20 годов</b></p>
